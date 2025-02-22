@@ -101,12 +101,12 @@
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LG(C)>;
             key-positions = <28 27>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LG(V)>;
             key-positions = <26 27>;
         };
 
@@ -162,7 +162,8 @@
         compatible = "zmk,keymap";
 
         DEF {
-                display-name = "Base";
+            display-name = "Base";
+
             // -----------------------------------------------------------------------------------------
             // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
             // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
@@ -178,7 +179,8 @@
         };
 
         NAV {
-                display-name = "Nav";
+            display-name = "Nav";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -194,7 +196,8 @@
         };
 
         SYM {
-                display-name = "Sym";
+            display-name = "Sym";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -210,10 +213,10 @@
         };
 
         ADJ {
-                display-name = "System";
+            display-name = "System";
             bindings = <
 &trans  &kp F1        &kp F2         &kp F3        &kp F4      &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans
-&trans  &hm LGUI F11  &hm LSHFT F12  &trans        &trans      &studio_unlock            &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &hm LGUI F11  &hm LSHFT F12  &trans        &trans      &studio_unlock    &trans  &trans  &trans  &trans  &trans       &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &bootloader  &trans
                                      &trans        &trans      &trans            &trans  &trans  &trans
             >;
